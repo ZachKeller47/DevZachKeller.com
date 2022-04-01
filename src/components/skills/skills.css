@@ -1,0 +1,77 @@
+/* ==== MEDIA QUERY FOR TABLET ==== */
+
+@media screen and (max-width: 1024px) {
+
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
+
+/* ==== MEDIA QUERY FOR MOBILE ==== */
+
+@media screen and (max-width: 600px) {
+    .experience__container {
+        display: flex;
+        grid-template-columns: 1fr;
+    }
+    
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__details-icons {
+        margin-top: 6px;
+        font-size: 3rem;
+    }
+}
+
+#skills h5,
+#skills h2 {
+    color: var(--color-text);
+}
+
+.experience__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience__container > div {
+    /* background: var(--color-bg-variant); */
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 2.4rem 5rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+    transition: all 0.4s ease-in;
+}
+
+.experience__container > div:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.experience__container > div h3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.experience__details-icons {
+    margin-top: 6px;
+    font-size: 2.4rem;
+}
